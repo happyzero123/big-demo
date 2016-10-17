@@ -32,7 +32,7 @@ class Blog extends React.Component {
     return(
       <div style={{width:'100%'}}>
 
-        {this.state.wait ? <div className="wait" ><CircularProgress size={4} /></div> : this.state.data.map( (item,i) => <BlogCard{...item} key={i} /> )}
+        {this.state.wait ? <div className="wait" ><CircularProgress size={2} /></div> : this.state.data.map( (item,i) => <BlogCard{...item} key={i} /> )}
       </div>
     )
   }
