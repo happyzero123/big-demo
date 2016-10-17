@@ -2,12 +2,29 @@ import React, { PropTypes } from 'react'
 
 class About extends React.Component {
   render () {
+    let styles={
+      center:{
+        margin:'10vh auto',
+        textAlign:'center'
+      },
+      title:{
+        color:'teal',
+        fontWeight:'600',
+        marginBottom:'8vh'
+      },
+      call:{
+        color:'blue',
+      },
+      phone:{
+        color:'red',
+      }
+    }
     return(
-    <div>
-      <h3>联系我</h3>
-      <p>一个热爱编程的女生</p>
-      <h4>CALL ME:</h4>
-      <h5>15943072131</h5>
+    <div style={styles.center}>
+      <h2 style={styles.title}>联系我</h2>
+
+      <h4 style={styles.call}>CALL ME:</h4>
+      <h3 style={styles.phone}>15943072131</h3>
 
     </div>
     )
