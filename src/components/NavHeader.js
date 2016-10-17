@@ -9,7 +9,7 @@ class NavHeader extends React.Component {
     return(
     <div className="nav-header">
       <p onClick={this.handleBack.bind(this)}><span className="glyphicon glyphicon-chevron-left"></span>Back</p>
-      <h3 style={{fontSize:"20px"}}>happyzero123@{this.props.title}</h3>
+      <h3>happyzero123@{this.props.title}</h3>
       <p className="glyphicon glyphicon-list"></p>
     </div>
     )
