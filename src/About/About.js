@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
-
+import Ability from './Ability'
+import Message from './Message'
 class About extends React.Component {
   render () {
     let styles={
@@ -13,18 +14,21 @@ class About extends React.Component {
         marginBottom:'8vh'
       },
       call:{
-        color:'blue',
+        color:'red',
       },
       phone:{
-        color:'red',
+        color:'blue',
+        marginBottom:'10vw'
       }
     }
     return(
     <div style={styles.center}>
+      <Message />
+      <Ability/>
       <h2 style={styles.title}>联系我</h2>
 
       <h4 style={styles.call}>CALL ME:</h4>
-      <h3 style={styles.phone}>15943072131</h3>
+      <h3 style={styles.phone}>13621325129</h3>
 
     </div>
     )

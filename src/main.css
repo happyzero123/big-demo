@@ -133,6 +133,7 @@ body{
 @media(min-width:540px) {
   .work-card{
     width: 48%;
+    height: 90vh;
     font-size: 1.2vw;
   }
 }
@@ -163,4 +164,17 @@ body{
   justify-content:center;
   align-items:center;
   /*margin: auto;*/
+}
+.logo{
+  position:relative;
+  background-size: cover;
+  animation:myfirst 6s;
+}
+@-webkit-keyframes myfirst{
+0%   {background:url(http://odr4qggss.bkt.clouddn.com/ab.jpg); background-size: cover; left:0px; top:-30vw;}
+25%  {background:url(http://odr4qggss.bkt.clouddn.com/aa.jpg); background-size: cover; left:23vw; top:0px;}
+50%  {background:url(http://odr4qggss.bkt.clouddn.com/ac.jpg); background-size: cover; left:23vw; top:30vw;}
+75%  {background:url(http://odr4qggss.bkt.clouddn.com/ab.jpg); background-size: cover; left:-23vw; top:30vw;}
+85%  {background:url(http://odr4qggss.bkt.clouddn.com/ad.jpg); background-size: cover; left:-23vw; top:0px;}
+100% {left:0px; top:0px;}
 }
